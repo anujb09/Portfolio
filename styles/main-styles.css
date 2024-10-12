@@ -5,6 +5,7 @@
   --gray-color: #cecece;
   --button-border: hsla(240, 2%, 48%, 0.2);
   --light-black: #121214;
+  --dark-gray-color: #9f9f9f;
 }
 * {
   margin: 0;
@@ -48,6 +49,7 @@ li {
 .p45 {
   padding: 45px;
 }
+
 /* HEADER STYLES  */
 .header {
   max-width: 1320px;
@@ -110,117 +112,66 @@ li {
   }
 }
 
-/* HERO STYLES */
 
-.hero-grid {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-gap: 1.5rem;
+/* CONNECT SETION  */
+.connect {
+  padding: 80px 200px;
 }
-.hero-card {
-  background-color: var(--light-black);
-  border-radius: 10px;
-}
-.profile {
-  padding: 45px;
-}
-.profile .profile-img img {
-  width: 270px;
-  border-radius: 50%;
-  margin-bottom: 15px;
-}
-.profile h2 {
+.connect h1 {
   color: #fff;
-  font-size: 35px;
-  margin-bottom: 5px;
-}
-.profile-tag {
-  color: var(--gray-color);
-  margin-bottom: 35px;
-}
-.profile .social-media li {
-  padding: 0px 15px;
-}
-.profile .social-media li a {
-  border: 1px solid var(--button-border);
-  padding: 10px 15px;
-  border-radius: 10px;
-  cursor: pointer;
-  color: #fff;
-  font-size: 20px;
-}
-.tagline {
-  padding: 45px;
-  margin-bottom: 1.5rem;
-}
-.tagline .hello {
-  color: var(--gray-color);
-  margin-bottom: 15px;
-}
-.tagline h1 {
-  color: #fff;
-  font-weight: 500;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 50px;
   margin-bottom: 20px;
+  text-align: center;
 }
-.avil {
-  display: flex;
-  align-items: center;
-  margin-left: 50px;
-  margin-bottom: 20px;
+.connect p {
+  margin-bottom: 1rem;
+  text-align: center;
+  color: var(--dark-gray-color);
 }
-.avil p {
-  color: var(--gray-color);
-}
-.avil .circle {
-  background-color: yellow;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  margin-right: 10px;
-}
-.tagline .cv {
+.connect .talk {
   background-color: var(--red-color);
   font-size: 14px;
   font-weight: 500;
   color: #fff;
-  padding: 13px 20px;
+  padding: 13px 35px;
   border-radius: 10px;
   cursor: pointer;
-  width: 20%;
 }
-.company {
-  padding: 45px;
+.connect .talk i {
+  margin-left: 5px;
 }
-.company h1 {
-  color: #fff;
-  margin-bottom: 40px;
-  font-weight: 500;
+.connect .talk:hover {
+  border: 1px solid var(--button-border);
+  background-color: transparent;
+  transition: 0.3s ease-in;
 }
-.company img {
-  width: 200px;
+@media only screen and (max-width: 991px) {
+  .connect {
+    padding: 60px 35px;
+    margin: 1rem 15px;
+    margin-bottom: 0rem;
+  }
+  .connect h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
 }
 
+/* FOOTER STYLES  */
+.footer {
+  padding: 50px 0px;
+}
+.footer p {
+  color: var(--dark-gray-color);
+}
+.footer p span {
+  color: var(--red-color);
+}
 @media only screen and (max-width: 991px) {
-  .hero-grid {
-    grid-template-columns: 1fr;
-    padding: 0px 15px;
-  }
-  .profile,
-  .tagline,
-  .company {
-    padding: 30px;
-  }
-  .profile-img {
-    width: 200px;
-  }
-  .tagline .cv {
-    width: 48%;
-  }
-  .tagline h1,
-  .company h1 {
-    font-size: 25px;
-  }
-  .avil {
-    margin-left: 25px;
+  .footer {
+    flex-direction: column;
+    padding: 35px 0px;
   }
 }
